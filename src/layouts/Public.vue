@@ -8,7 +8,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-parallax src="https://cdn.quasar.dev/img/parallax2.jpg">
+    <q-parallax :src="require('../assets/banner_1.jpeg')">
       <h2 class="text-white">Recipe Buddy</h2>
       <div class="q-pa-md q-gutter-sm">
         <q-btn color="primary" label="Sign Up" />
