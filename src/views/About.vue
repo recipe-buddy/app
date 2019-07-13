@@ -1,12 +1,17 @@
 <template>
   <q-page padding>
-    <p>This is an about page</p>
+    <FeatureCard icon="fas fa-book" title="Test">test body</FeatureCard>
+    <FeatureCard icon="fas fa-book" title="Test">test body</FeatureCard>
+    <FeatureCard icon="fas fa-book" title="Test">test body</FeatureCard>
   </q-page>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import FeatureCard from '@/components/FeatureCard.vue'
 
-@Component
+@Component({
+  components: { FeatureCard }
+})
 export default class PageAbout extends Vue {}
 </script>
