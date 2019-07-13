@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="glossy">
+    <q-header elevated>
       <q-toolbar>
         <q-btn
           flat
@@ -11,9 +11,7 @@
           icon="fas fa-bars"
         />
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
+        <q-toolbar-title>Quasar App</q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
@@ -114,14 +112,9 @@
   </q-layout>
 </template>
 
-<script>
-export default {
-  name: 'LayoutDefault',
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
 
-  data() {
-    return {
-      leftDrawerOpen: this.$q.platform.is.desktop
-    }
-  }
-}
+@Component
+export default class LayoutPublic extends Vue {}
 </script>
