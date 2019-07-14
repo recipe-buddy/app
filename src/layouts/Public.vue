@@ -2,9 +2,11 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-toolbar-title>Recipe Buddy</q-toolbar-title>
+        <q-toolbar-title>
+          <q-icon name="fas fa-utensils" class="text-white" />
+        </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Log In</div>
       </q-toolbar>
     </q-header>
 
