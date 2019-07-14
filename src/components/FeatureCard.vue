@@ -1,8 +1,14 @@
 <template>
   <div class="feature-card">
-    <q-icon :name="icon" />
-    <h6>{{ title }}</h6>
-    <slot></slot>
+    <div class="feature-card__icon">
+      <q-icon :name="icon" />
+    </div>
+    <div class="feature-card__title">
+      <h6>{{ title }}</h6>
+    </div>
+    <div class="feature-card__body">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -21,4 +27,20 @@ export default class FeatureCard extends Vue {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.feature-card {
+  text-align: center;
+
+  &__icon {
+    font-size: 48px;
+  }
+
+  &__title h6 {
+    margin: 10px;
+  }
+
+  &__body {
+    margin-top: 20px;
+  }
+}
+</style>
