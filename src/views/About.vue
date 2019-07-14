@@ -1,8 +1,31 @@
 <template>
   <q-page padding>
-    <FeatureCard icon="fas fa-book" title="Test">test body</FeatureCard>
-    <FeatureCard icon="fas fa-book" title="Test">test body</FeatureCard>
-    <FeatureCard icon="fas fa-book" title="Test">test body</FeatureCard>
+    <!-- Features section -->
+    <div class="row justify-center">
+      <div class="col-xs-12 col-sm-4">
+        <FeatureCard icon="fas fa-search" title="Organise">
+          All your recipes in one place. Search through all your recipes using
+          our search tools to quickly find what you're looking for.
+        </FeatureCard>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <FeatureCard icon="fas fa-book" title="Plan">
+          Our planning tools can quickly help you plan your shopping list for
+          the week based on the meals you select.
+        </FeatureCard>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <FeatureCard icon="fas fa-utensils" title="Suggest">
+          Our recipe suggestion tools can help you think of meal ideas based on
+          what you have in your fridge right now.
+        </FeatureCard>
+      </div>
+    </div>
+
+    <!-- Sign up -->
+    <div class="row justify-center q-mt-xl q-mb-xl">
+      <q-btn color="red" label="Get started now" />
+    </div>
   </q-page>
 </template>
 
