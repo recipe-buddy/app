@@ -21,6 +21,15 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer>
+      <q-toolbar>
+        <q-toolbar-title></q-toolbar-title>
+        <q-btn flat round dense icon="fab fa-github" />
+        <q-btn flat round dense icon="fab fa-facebook" />
+        <q-btn flat round dense icon="fab fa-twitter" />
+      </q-toolbar>
+    </q-footer>
   </q-layout>
 </template>
 
