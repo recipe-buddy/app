@@ -1,7 +1,7 @@
 <template>
   <div class="feature-card">
     <div class="feature-card__icon">
-      <q-icon :name="icon" />
+      <q-icon :name="icon" :class="[color ? `text-${color}` : '']" />
     </div>
     <div class="feature-card__title">
       <h6>{{ title }}</h6>
@@ -24,6 +24,10 @@ export default class FeatureCard extends Vue {
   // Main card title
   @Prop({ type: String, required: true })
   readonly title!: string
+
+  // Icon color
+  @Prop({ type: String })
+  readonly color!: string
 }
 </script>
 
