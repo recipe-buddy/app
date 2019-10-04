@@ -4,5 +4,5 @@ module.exports = {
       treeShake: true
     }
   },
-  transpileDependencies: [/[\\/]node_modules[\\/]quasar[\\/]/]
-};
+  transpileDependencies: [/\/node_modules\/quasar\//]
+}

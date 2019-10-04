@@ -6,8 +6,9 @@
 
 <style></style>
 
-<script>
-export default {
-  name: "PageHome"
-};
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component
+export default class PageHome extends Vue {}
 </script>
